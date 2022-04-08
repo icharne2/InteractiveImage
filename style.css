@@ -1,0 +1,158 @@
+@font-face {
+    font-family: AkayaTelivigala;
+    src: url(Fonts/AkayaTelivigala-Regular.ttf);
+}
+        
+@font-face {
+    font-family: Roboto;
+    src: url(Fonts/Roboto-Medium.ttf);
+}
+        
+*{ 
+    padding: 0px; 
+    margin: 0px; 
+}
+
+img{ 
+    border: none; 
+}
+        
+a:focus, a:active{ 
+    outline:none; 
+}
+        
+body{ 
+    text-align: center;
+    font-family: Roboto;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+        
+h1{ 
+    font-size: 70px; 
+    color: white;
+    font-family: AkayaTelivigala;
+    margin-top: 10px; 
+}
+		
+/* Picture Styles */
+#picture{ 
+    position: relative; 
+    top: 20px; 
+    width: 1200px; 
+    height: 800px; 
+    margin: 0px auto;
+    background: #FFF url('IMG/lion_king.jpg'); 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    overflow: hidden;
+}
+			
+/* General More Button */		
+.more{ 
+    position: absolute; 
+    width: 50px; 
+    height: 50px; 
+    background-color: rgb(255, 255, 255, 0.5); 
+    border-radius: 25px;
+    padding: 5px; 
+    text-align: left; 
+    overflow: hidden; 
+}
+        
+.more img{
+    width: 50px;
+    height: auto;
+}
+			
+.more span{ 
+    position: absolute; 
+    left: 60px; 
+    width: 160px; 
+    padding: 15px 0 0 5px; 
+    color: rgb(0, 0, 0, 0.75); 
+    font-size: 20px;  
+    font-weight: bold;
+}
+			
+/* Item Specific More Button */
+#nala { 
+    top: 540px; 
+    left: 950px;  
+}
+
+#zazu { 
+    top: 190px; 
+    left: 210px; 
+            
+}
+
+#timon{ 
+    top: 355px; 
+    left: 390px;       
+} 
+
+#simba{ 
+    top: 350px; 
+    left: 600px;          
+} 
+
+#pumba{ 
+    top: 530px; 
+    left: 400px; 
+            
+} 
+
+#rafiki{ 
+    top: 370px; 
+    left: 1020px; 
+} 
+			
+/* General Info Box */
+#infobox{ 
+    position: absolute; 
+    bottom: -200px; 
+    left: 620px; 
+    min-height: 300px; 
+    width: 300px; 
+    z-index: 20; 
+    margin: 0 0 -100px -150px; 
+    background: #FFF; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+}
+        
+#infobox div img{
+    width: auto;
+    height: 200px;
+}
+
+#infobox .opis{
+    line-height: 30px;
+    padding: 5px 20px;    
+}
+				
+/* Close button for info box */
+span.close{
+    position: absolute; 
+    right: 5px; 
+    top: 5px;
+}
+        
+.close img{
+    width: 20px;
+    height: 20px;
+}
+			
+/* The dimmed background when the info box is showing */	
+
+#fade_bg{ 
+    position:absolute; 
+    z-index:15; 
+    width:100%; 
+    height:100%; 
+    background-color: rgb(0, 0, 0, 0.5); 
+    display:none;
+}
+        
